@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitworks</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- LINK TO STYLE SHEET -->
+    <link rel="stylesheet" href="style.css">
+    <!-- LINK TO FAVICON -->
+    <link type="image/png" href="./Option2-assets/badge.png" rel="icon">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <a class="nav-title" href="index.html">Fitworks</a>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Philosophy</a></li>
+                    <li><a href="#classes">Classes</a></li>
+                    <li><a href="#join-us">Join Us</a></li>
+                </ul>
+            </nav>
+            <h1>Everything fitness space</h1>
+            <!-- should I add the logo thing again here which is in the other example? The mobile version has the logo in the middle but the desktop version doesn't.... hmm (didn't end up having time to do this anyway 😢)-->
+        </div>
+        <img class="header-img" src="./Option2-assets/header.jpg" alt="man in white shirt working out with med ball">
+        <!-- ^I tried to make these into background-image via CSS instead, but the only way it could be done was by adding a div or a span (without content), which I felt defeated the purpose of including it as a bg image, and would be much more difficult to achieve considering responsive design, so I decided to just stick to using the <img> tags. -->
+    </header>
+    <main>
+        <section class="our-space">
+            <div class="space-container-1">
+                <h2>Our space</h2>
+                <p> Manifestation spirit quides quartz, Reiki practitioner stones oracle peace healer goddess sage
+                    charms. Energy healing
+                    pendulum meditate divination practitioner candles chanting massage Buddha. Divine Light Worker
+                    herbalist, lavender love compassion practitioner pendulum massage fibonacci sage. Dance peace
+                    angels
+                    awakening. Love Flower
+                    of Life tarot shamantic.
+                </p>
+                <div class="box">
+                    <a href="#join-us">Let's Chat</a>
+                </div>
+            </div>
+
+            <div class="space-container-2">
+                <img class="image1" src="./Option2-assets/image1.jpg"
+                    alt="two people in workout clothes working out with dumbbells, with carton of water each">
+            </div>
+        </section>
+        <section id="classes" class="exercises">
+            <div class="wrapper">
+                <h2>Exercises</h2>
+                <p>Manifestation spirit guides quartz, Reiki practitioner stones oracle peace healer goddess sage
+                    charms.</p>
+            </div>
+
+            <div class="wrapper">
+                <ul class="exer-container-1">
+                    <li class="image-container-1">
+                        <div class="gradient-bg"><img src="./Option2-assets/image2.jpg"
+                                alt="man in black nike shirt and white shorts running outside in front of concrete wall">
+                        </div>
+                        <h3>Running</h3>
+                    </li>
+                    <li class="image-container-1">
+                        <div class="gradient-bg">
+                            <img src="./Option2-assets/image3.jpg"
+                                alt="woman in light pink clothes holding a difficult yoga pose">
+                        </div>
+                        <h3>Yoga</h3>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="wrapper">
+                <ul class="exer-container-2">
+                    <li class="image-container-2">
+                        <div class="gradient-bg"><img src="./Option2-assets/image4.jpg"
+                                alt="woman with boxing black boxing gloves doing boxing">
+                        </div>
+                        <h3>Boxing</h3>
+                    </li>
+                    <li class="image-container-2">
+                        <div class="gradient-bg">
+                            <img src="./Option2-assets/image5.jpg"
+                                alt="woman with red-orange leggings with weighted barbells on shoulders">
+                        </div>
+                        <h3>CrossFit</h3>
+                    </li>
+                    <li class="image-container-2">
+                        <div class="gradient-bg">
+                            <img src="./Option2-assets/image6.jpg"
+                                alt="two women holding a superman pose with single dumbbell in the shot">
+                        </div>
+                        <h3>Strength</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="join-us" class="join-us">
+            <div class="wrapper">
+                <h2>Join us today</h2>
+                <p>Manifestation spirit guides quartz, Reiki practitioner stones oracle peace healer goddess sage
+                    charms.
+                </p>
+
+                <form action="#" method="#" class="myForm" name="myForm">
+                    <div class="box1">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="box2">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="box3">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="75" rows="5" minlength="5" maxlength="200">
+                      </textarea>
+
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="members">
+            <div class="wrapper">
+                <h2>Happy members</h2>
+                <div class="members-container">
+                    <p>FITWORKS studio transformed my philosophy on health and fitness, and
+                        they truly changed my lifestyle for the best.</p>
+                    <div class="members-image-container">
+                        <img class="image-10" src="./Option2-assets/image10.jpg"
+                            alt="confident and professional looking woman smiling in front of a brick wall">
+                        <h5>Jaime Jorge </br><span>Founder, RENTEA </span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="image-8">
+                <img src="./Option2-assets/image8.jpg" alt="man wearing white shorts exercising with two ropes">
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="big-footer">
+                <div class="footer-container-1">
+                    <img class="badge" src="./Option2-assets/badge.png" alt="blue and white logo/badge with letter w">
+
+                    <address>129 Jordan Ave, </br>Toronto, CA M22 324 </br> <a
+                            href="mailto:info@spaces-studio.com">info@spaces-studio.com</a></address>
+                </div>
+
+                <div class="footer-nav">
+                    <nav>
+                        <ul>
+                            <h4>Menu</h4>
+                            <li> <a href=" #">About</a></li>
+                            <li> <a href="#">Philosophy</a></li>
+                            <li> <a href="#join-us">Join Us</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav>
+                        <ul>
+                            <h4>Classes</h4>
+                            <li> <a href="#classes">Yoga</a></li>
+                            <li> <a href="#classes">Running</a></li>
+                            <li> <a href="#classes">CrossFit</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul>
+                            <h4>Follow</h4>
+                            <li> <a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                            <li> <a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+                            <li> <a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+            <hr>
+            </hr>
+            <p>Created at Juno College of Technology</p>
+    </footer>
+</body>
+
+</html>

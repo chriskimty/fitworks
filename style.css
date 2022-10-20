@@ -1,0 +1,545 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+html { box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* OVERALL BODY STYLING/STRIPPING */
+
+body,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+    
+}
+
+body, button {
+    font-size: 125%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #08022D;
+    font-weight:600;
+    color:#fff;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 85%;
+    max-width: 1200px;
+}
+
+h2 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 100px;
+}
+
+h2::before {
+    content: url(./Option2-assets/slashes.svg);
+    margin-right: 15px; 
+}
+
+p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: left;
+    padding-right: 80px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    min-width: 375px; 
+}
+/* HEADER STYLING */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav .nav-title {
+    font-size: 1.75rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 35px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: auto;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0 20px;
+    margin-top: 35px;
+}
+
+header ul li a {
+     color: #fff;
+     text-decoration: none;
+     font-size: 1.125rem;
+     margin-left: -10px;
+}
+
+header h1 {
+    margin: 100px auto;
+    text-align: center;
+    font-size: 4.375rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+header .header-img {
+    width: 100%;
+    max-height: 55vh;
+    object-fit: cover;
+}
+
+/* MAIN STYLING*/
+ /* Section: our-space */
+
+main .our-space {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+
+main .space-container-1 {
+   width: 60%;
+}
+
+main .space-container-2 {
+    width: 40%;
+    margin-top: 100px;
+}
+
+main .image1 {
+    max-height: 50vh;
+    width: 100%;
+}
+
+main .box 
+ {
+    background-color: #3D20EF;
+    border: 6px solid #3D20EF;
+    margin: 30px 0px;
+    padding: 8px 20px;
+    font-size: 1.125rem;
+    width: 35%;
+    text-align: center;
+    min-width: 207.4px;
+    transition: all 200ms;
+    transition-timing-function: ease-in;
+}
+
+main .box a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main .box:hover {
+    background-color: #6459fa;
+    border: 6px solid #6459fa;
+    color: #fff;
+    cursor: pointer;
+}
+/* Section: Exercises */
+
+main .exercises p {
+    width: 60%; 
+    margin-bottom: 40px;
+}
+
+
+main .exer-container-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main img {
+	width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    min-width: 300px;
+    min-height: 350px;
+}
+
+.gradient-bg::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(11, 11, 11, 0.676) 100%);
+    margin-top: -150px;
+    height: 150px;
+    width: 100%;
+    content: '';
+}
+
+main .image-container-1 {
+    margin: 1%;
+	width: calc((100%/2) - 2%);
+	position: relative;
+    min-width:300px;
+    border-bottom: 3px solid #FFD600;
+}
+
+main .exer-container-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .image-container-2 {
+	margin: 1%;
+	width: calc((100%/3) - 2%);
+	position: relative;
+    min-width: 300px;
+    border-bottom: 3px solid #FFD600;
+}
+
+main .exercises h3 {
+	position: absolute;
+	top: 125px;
+    left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+    text-align: left;
+    z-index: 100;
+}
+
+/* Section: Join Us */
+main .join-us {
+    background-image: url(./Option2-assets/image7.jpg);
+	background-size: cover;
+	min-height: 85vh;
+    object-fit: cover;
+    width: 100%;
+	margin-top: 80px;
+    padding-top: 10px;
+}
+/* ^WHITE LINE is showing on the bottom if I zoom out. could I do it without cropping it out from the original image?? */
+
+main .join-us p {
+    width: 60%; 
+    margin-bottom: 40px;
+}
+
+main label {
+    font-size: 1rem;
+    font-weight: 400;
+    display: block;
+    margin-top: 10px;
+}
+
+main input, textarea {
+    padding: 10px;
+    background-color: #e4e2f6;
+    border: none;
+    margin: 10px 15px 10px 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 70%;
+}
+
+main input[type="text"] {
+    min-width:350px;
+}
+
+main input[type="email"] {
+    min-width:350px;
+}
+
+main button {
+    color: #fff;
+    background-color: #3D20EF;
+    border: 6px solid #3D20EF;
+    margin: 30px auto 120px 0px;
+    padding: 8px 40px;
+    font-size: 1.125rem;
+    transition: all 200ms;
+    transition-timing-function: ease-in;
+    display: block;
+}
+
+main button:hover {
+    background-color: #6459fa;
+    border: 6px solid #6459fa;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Section: Members */
+
+main .members p {
+    font-size: 1.6rem;
+    width: 70%;
+    margin-left: 50px;
+}
+
+main .members-container {
+    border-left: 5px solid #FFD600;
+}
+
+main .members-image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+ .members .image-10 {
+    width: 120px;
+    height: auto;
+    min-height: 50px;
+    min-width: 100px;
+    object-fit: cover;
+    margin-left: 50px;
+    border-radius: 50%;
+}
+
+main .members-image-container h5 {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    flex-grow: 3;
+}
+
+main .members-image-container span {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+/* ^a better way to do this? */
+
+main .members-image-container h5::after {
+    content: url(./Option2-assets/arrow.svg);
+    margin-left: 250px; 
+}
+
+main .image-8 {
+    width: 100%;
+    max-height: 55vh;
+    object-fit: cover;
+    margin: 70px 0 50px; 
+}
+
+/* FOOTER STYLING */
+
+footer .big-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer nav {
+    display: inline-block;
+    margin: 30px;
+}
+
+footer .badge {
+    width: 45px;
+    margin: 0px 0px 15px;
+}
+
+footer address {
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+footer address a {
+    line-height: 2;
+    text-decoration: none;
+    color: #fff; 
+}
+
+footer h4 {
+    font-size: 0.8rem;
+}
+
+footer li a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color:#fff;
+    font-weight: 400;
+}
+
+footer hr {
+    color: #9E9DA6;
+}
+
+footer p {
+    font-size: 0.7rem;
+    color: #9E9DA6;
+    font-weight: 400;
+    line-height:1.5;
+    margin-bottom: 50px;
+}
+
+
+/* MEDIA QUERY STYLES */
+@media (max-width: 1100px) {
+    .wrapper {
+		width: 87%;
+	}
+
+     main .image-container-1, 
+     main .image-container-2,
+     main .image-container-1 img,
+     main .image-container-2 img {
+        min-width: 80%;
+    }
+}
+
+@media (max-width: 750px) {
+	.wrapper {
+		width: 90%;
+	}
+
+    p {
+        min-width: 88%;
+        padding-right: 0px;
+    }
+
+    main .space-container-2 {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+     main .image-container-1, 
+     main .image-container-2,
+     main .image-container-1 img,
+     main .image-container-2 img {
+        min-width: 90%;
+    }
+
+    .myForm textarea {
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 420px) {
+	.wrapper {
+		width: 93%;
+	}
+
+    html {
+        font-size: 85%;
+    }
+
+    p {
+        line-height: 1.5;
+        font-size: 120%;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+    
+/* didn't have time to figure out how to create a dropdown menu for the mobile view, so just leaving it as this, but looking forward to figuring out how to do this in the future!!  */
+
+    main .space-container-1 {
+    width: 100%;
+    }
+
+    main .image1 {
+        height: 100%; 
+        object-fit: contain;
+    }
+
+    main .box {
+        width: 93%;
+        margin-left: 14px;
+    }
+
+    main input[type="text"], 
+    main input[type="email"] {
+        min-width:390px;
+    }
+
+    .myForm textarea {
+        max-width: 390px;
+    }
+
+    button {
+        width: 95%;
+    }
+
+    .members h2 {
+        font-size: 200%;
+    }
+
+    main .members-image-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .members .image-10 {
+        margin-left: 20px;
+    }
+
+    main .members-image-container h5::after {
+        margin: 40px;
+    }
+
+    .footer-nav {
+        border-top: solid 2px #9E9DA6;
+        margin-top: 20px;
+    }
+
+    /* can't seem to make the font size bigger here for some reason... */
+
+    footer .big-footer {
+    flex-direction: column;
+    }
+
+    footer nav {
+    display: block; 
+    /* margin: 30px; */
+    }
+
+    footer nav li {
+        display: inline-block;
+        margin: 0px 8px 0 0;
+    }
+
+    footer p {
+        text-align: center;
+    }
+}
+
+/* Overall, could have done much more work for the media queries but ran out of time 😩. I plan to come back to this in the future to clean it up. Thank you for providing the feedback! */
+
+
